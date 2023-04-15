@@ -48,24 +48,26 @@ li{
     background-color: rgb(1, 139, 139);
     padding: 1em 0;
     position: absolute;
-    display: none;
+    visibility: hidden;
+    opacity: 0;
     border-radius: 2px;
     top: 110px;
 }
 .dropdown li + li{
-    margin-top: 10px;
+    margin-top: 5px;
 }
 .dropdown li{
     padding: .5em 1em;
     width: 8em;
     text-align: center;
+
 }
 .dropdown li:hover{
     background-color: #4c9e9e;
-    
 }
 .services:hover .dropdown {
-    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 input[type=checkbox]{
     display: none;
